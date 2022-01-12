@@ -497,6 +497,10 @@ export class KeyManager {
     return { citekey: '', pinned: false, retry: true }
   }
 
+  public generate(item: ZoteroItem): string {
+    return Formatter.format(item)
+  }
+
   public propose(item: ZoteroItem, transient: string[] = []): { citekey: string, pinned: boolean } {
     let citekey: string = Extra.get(item.getField('extra') as string, 'zotero', { citationKey: true }).extraFields.citationKey
 

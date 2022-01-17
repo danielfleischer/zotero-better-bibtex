@@ -3,6 +3,11 @@
 <!DOCTYPE overlay SYSTEM "chrome://zotero-better-bibtex/locale/zotero-better-bibtex.dtd">
 
 <overlay id="zotero-better-bibtex-zoteroPane-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="chrome://zotero/content/include.js"/>
+  <script>
+    Zotero.debug('starting better-bibtex')
+  </script>
+
   <hbox id="zotero-items-toolbar">
     <hbox id="better-bibtex-progress" insertbefore="zotero-tb-search-spinner" hidden="true">
       <progressmeter id="better-bibtex-progress-meter" mode="determined" value="0"/>

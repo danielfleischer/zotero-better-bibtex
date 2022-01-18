@@ -3,7 +3,6 @@
 <!DOCTYPE overlay SYSTEM "chrome://zotero-better-bibtex/locale/zotero-better-bibtex.dtd">
 
 <overlay id="zotero-better-bibtex-zoteroPane-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-  <script src="chrome://zotero/content/include.js"/>
   <script>
     Zotero.debug('starting better-bibtex')
   </script>
